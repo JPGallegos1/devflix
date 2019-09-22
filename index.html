@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Devflix</title>
+    <link
+      rel="stylesheet"
+      href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
+    />
+    <link rel="stylesheet" href="css/scss/app.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <img src="img/logo.svg" alt="logo" class="logotipo" />
+    </header>
+
+    <main class="formulario-login contenedor">
+      <form action="#">
+        <legend>Inicia sesión</legend>
+        <div class="campo">
+          <input type="text" id="usuario" />
+          <label>Email o número de teléfono</label>
+        </div>
+        <div class="campo">
+          <input type="password" id="password" />
+          <label>Contraseña</label>
+          <span>Mostrar</span>
+        </div>
+
+        <div class="submit">
+          <input type="submit" value="Iniciar sesión" />
+        </div>
+
+        <div class="acciones">
+          <div class="recuerdame">
+            <input type="checkbox" />
+            <label>Recuerdame</label>
+          </div>
+
+          <div class="ayuda">
+            <a href="#">¿Necesitas ayuda?</a>
+          </div>
+          <!-- acciones-->
+        </div>
+      </form>
+
+      <div class="contenido-inferior">
+        <a href="#">Iniciar sesión con facebook</a>
+        <p class="nuevo-usuario">
+          ¿Primera vez en Netflix? <a href="#"><span>Suscríbete ya</span></a>
+        </p>
+      </div>
+    </main>
+
+    <footer class="side-footer">
+      <div class="contenedor">
+        <p>¿Preguntas? Llama al 01800-265-0161</p>
+
+        <nav class="menu-footer">
+          <a href="#">Términos de las tarjetas de regalo</a>
+          <a href="#">Términos de uso</a>
+          <a href="#">Declaración de privacidad</a>
+        </nav>
+
+        <select class="lenguaje">
+          <option value="eng">English</option>
+          <option value="esp">Español</option>
+        </select>
+      </div>
+      <!-- Contenedor -->
+    </footer>
+  </body>
+
+  <script src="js/app.js"></script>
+</html>

@@ -1,0 +1,40 @@
+/* Media queries */
+
+@mixin phone{
+    @media (min-width: #{$phone}){
+        @content;
+    }
+}
+
+@mixin tablet{
+    @media (min-width: #{$tablet}){
+        @content;
+    }
+}
+
+@mixin desktop{
+    @media (min-width: #{$desktop}){
+        @content;
+    }
+}
+
+@mixin box-sizing($box-model){
+    box-sizing: $box-model;
+}
+
+@mixin button($bgColor) {
+    background-color: $bgColor;
+    color: $white;
+    display: block;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: $radius;
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    -o-border-radius: $radius;
+    font-size: 1rem;
+    padding: 1rem 0;
+}
